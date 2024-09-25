@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteador</title>
+</head>
+<body>
+    <header class="top">
+        <h1>SORTEADOR</h1>
+    </header>
+    <div class="container">
+        <h2>O Número sorteado foi:</h2>
+        <div id="sorteado">
+            <p>...</p>
+        </div>
+        <div class="configs">
+            <label for="numero">intervalo do sorteio:</label>
+            <input id="seletor" type="number" name="numero" min="0" placeholder="De 1 a ...">
+            <button id="sortear" onclick="sortear()">Sortear</button>
+        </div>
+    </div>
+    <script src="sorteador.js"></script>
+</body>
+</html>

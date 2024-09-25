@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+  }
+
+body{
+
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-size: cover; /* A imagem cobre todo o elemento */
+}
+
+h1{
+    background-color: rgb(145, 231, 231);
+    text-align: center;
+}
+
+.container {
+    background-color: black;
+    border-radius: 12px;
+    border: solid;
+    border-color: yellow;  
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    padding-top: 7px;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    border-radius: 12px; /* Diminuí o arredondamento para um visual mais sutil */
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: black;
+    padding: 5px; /* Reduzi o padding para tornar o p menor */
+    font-size: 24px; /* Tamanho da fonte adequado para exibir um número */
+    width: 100px; /* Defini uma largura fixa para centralizar o número */
+    margin: 10px auto; /* Adicionei auto para centralizar horizontalmente */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Opcional: adiciona uma leve sombra */
+}
+
+.configs{
+    padding: 15px;
+}
+
+input{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-bottom: 2px solid white; 
+    background-color: transparent;
+    outline: none;
+    width: 40%;
+    height: 25px;
+    text-align: center;
+    color: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type="number"]:focus {
+    border-bottom-color: lightblue; /* Cor da linha ao focar */
+  }
+
+button {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+   
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+button:hover::before {
+    width: 105%;
+}
+   
+button:hover {
+    color: #111;
+}
+   
+
+
